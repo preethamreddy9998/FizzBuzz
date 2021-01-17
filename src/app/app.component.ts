@@ -12,12 +12,14 @@ export class AppComponent {
   public outputLabel = environment.outputLabel;
 
   /** There are the input values (Collection of strings/numbers/invaild ) */
-  public stringCollection = [1, 3, 5, , 25, "A", 43, 81, 75, , ];
+  public stringCollection = [1, 3, 5, , 15, "A", 23];
 
   /** Factor and its respected return values */
   public mappings = [{ factor: 3, word: "Fizz" }, { factor: 5, word: "Buzz" }];
 
+  /** Core business logic is here!*/
   fizzbuzz(number) {
+    // Check whether we are recieving Number or not
     if (!Number(number)) {
       return '"' + number + '" is Invalid Item';
     }
