@@ -1,0 +1,31 @@
+<!-- Uncomment the below code to see the customized user input -->
+<!-- <div>
+  <label class="tilteFont">Enter the number </label>
+  <input
+    type="text"
+    name="inputValue"
+    [ngModel]="inputValue"
+    (ngModelChange)="onSearchChange($event)"
+  />
+</div>
+
+<div>
+  <label class="tilteFont">Output :</label>
+  <span>{{outputValue}}</span>
+</div> -->
+
+<div>
+  <h4>
+    {{inputLabel}}
+  </h4>
+  <span style="background-color:'lightgrey'" *ngFor="let i of stringCollection">
+    {{i}}
+  </span>
+</div>
+
+<h4>
+  {{outputLabel}}
+</h4>
+<p *ngFor="let i of stringCollection">
+  {{fizzbuzz(i)}}
+</p>
