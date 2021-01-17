@@ -8,9 +8,9 @@ npm install
 
 npm start
 
-Local server will listens at 4200 port.
+Local server listens at 4200 port.
 
-Demo will be avialble on 
+Demo is avialble on 
 https://stackblitz.com/edit/angular-ivy-yyarc6 
 
 pre-requisities : 
