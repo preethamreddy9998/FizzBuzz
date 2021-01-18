@@ -12,7 +12,7 @@
 <div>
   <label class="tilteFont">Output :</label>
   <span>{{outputValue}}</span>
-</div> -->
+</div>  -->
 
 <div>
   <h4>
@@ -26,6 +26,4 @@
 <h4>
   {{outputLabel}}
 </h4>
-<p *ngFor="let i of stringCollection">
-  {{fizzbuzz(i)}}
-</p>
+<p [innerHtml]="fizzbuzz(i)" *ngFor="let i of stringCollection"></p>
