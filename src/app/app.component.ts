@@ -49,9 +49,6 @@ export class AppComponent {
     }
   }
 
-  // wordsConcat(words, number) {
-  //   return words.length === 2 ? words.join("-") : words[0] + "-";
-  // }
 
   /** we have another way of doing this task. Uncomment the below code if you want to provide customized inputs from UI. so that it will take the input from input box and display the corresponding vlaues on the screen. Dont forget to Uncomment the corresponding HTML code*/
 
