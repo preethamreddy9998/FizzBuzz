@@ -17,7 +17,7 @@ npm run test
 Local server listens at 4200 port http://localhost:4200/
 
 Demo is availble 
-https://stackblitz.com/edit/angular-ivy-ry57ln
+https://stackblitz.com/edit/angular-ivy-vwvyvj
 
 pre-requisities : 
 Node Js
