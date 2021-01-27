@@ -12,13 +12,14 @@ export class AppComponent {
   public outputLabel = environment.outputLabel;
 
   /** There are the input values (Collection of strings/numbers/invaild ) */
-  public stringCollection = [1, 3, 5, , 15, "A", 23, 97];
+  public stringCollection = [1, 3, 5, , 15, "A", 23, 97, 45, -3, -5, -15];
 
   /** Factor and its respected return values */
   public mappings = [{ factor: 3, word: "Fizz" }, { factor: 5, word: "Buzz" }];
 
   /** Core business logic is here!*/
-  fizzbuzz(number) {
+  fizzbuzz(num) {
+    const number = parseInt(num);
     // Check whether we are recieving Number or not
     if (!Number(number)) {
       return '"' + number + '" is Invalid Item';
@@ -32,7 +33,11 @@ export class AppComponent {
       });
 
     if (words.length > 0) {
-      return words.join("");
+      return Number(number) > 0
+        ? words.join("")
+        : words.length === 2
+        ? words.join("-")
+        : words[0] + "-";
     } else {
       return (
         "Divided " +
@@ -44,9 +49,9 @@ export class AppComponent {
     }
   }
 
-  multipleOf(factor, number) {
-    return number % factor === 0;
-  }
+  // wordsConcat(words, number) {
+  //   return words.length === 2 ? words.join("-") : words[0] + "-";
+  // }
 
   /** we have another way of doing this task. Uncomment the below code if you want to provide customized inputs from UI. so that it will take the input from input box and display the corresponding vlaues on the screen. Dont forget to Uncomment the corresponding HTML code*/
 
